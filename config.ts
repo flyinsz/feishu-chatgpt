@@ -15,6 +15,14 @@ export default {
       prompt: '以下我输入的语言，如果是任意语言则翻译其为中文，如果为中文则将其翻译为英文：\n'
     },
   },
+  wxwork: {
+    'huangbo': {
+      corpId: process.env.HUANGBO_CORP_ID,
+      appSecret: process.env.HUANGBO_APP_SECRET,
+      token: process.env.HUANGBO_TOKEN,
+      aesKey: process.env.HUANGBO_AES_KEY
+    }
+  },
 
   baseURL: process.env.BASE_URL || 'https://api.openai.com',
   apiKey: (process.env.OPEN_API_KEY ?? '').split(','),
